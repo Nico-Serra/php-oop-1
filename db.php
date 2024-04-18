@@ -1,5 +1,8 @@
 <?php
 include_once __DIR__ . '/Models/Production.php';
+include_once __DIR__ . '/Models/Genre.php';
+
+
 
 $films = [];
 
@@ -9,11 +12,11 @@ Creare un layout completo per stampare a schermo una lista di produzioni. Faccia
 creando un file dedicato ai dati (tipo le array di oggetti) che potremmo chiamare db.php
 mettendo ciascuna classe nel proprio file e magari raggruppare tutte le classi in una cartella dedicata che possiamo chiamare Models
 */
-$avengers = new Production('Avengers', 'English', 10);
-$hulk = new Production('Hulk', 'English', 7);
-$captainAmerica = new Production('Captain America', 'English', 10);
-$ironMan = new Production('Iron Man', 'English', 9);
-$thor = new Production('Thor', 'English', 8);
+$avengers = new Production('Avengers', 'English', 10, new Genre('Fantasy', 'The Avengers are a fictional team of superheroes '));
+$hulk = new Production('Hulk', 'English', 7, new Genre('Action & fantasy', 'He is a SuperHero'));
+$captainAmerica = new Production('Captain America', 'English', 10, new Genre('Action', 'He is a SuperHero'));
+$ironMan = new Production('Iron Man', 'English', 9, new Genre('Action', 'He is a SuperHero'));
+$thor = new Production('Thor', 'English', 8, new Genre('Fantasy', 'He is a SuperHero'));
 
 
 
