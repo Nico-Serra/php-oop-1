@@ -1,8 +1,8 @@
 <?php
 include_once __DIR__ . '/Models/Production.php';
 include_once __DIR__ . '/Models/Genre.php';
-
-
+include_once __DIR__ . '/Models/TvSerie.php';
+include_once __DIR__ . '/Models/Movie.php';
 
 $films = [];
 
@@ -18,7 +18,23 @@ $captainAmerica = new Production('Captain America', 'English', 10, new Genre('Ac
 $ironMan = new Production('Iron Man', 'English', 9, new Genre('Action', 'He is a SuperHero'));
 $thor = new Production('Thor', 'English', 8, new Genre('Fantasy', 'He is a SuperHero'));
 
+// $movie = new Movie('Transformers', 'English', '8', new Genre('Action & Fantasy', 'Cars transform in robot'),'5000000€', '2h', 2007);
 
+$movies = [
+    new Movie('Transformers', 'English', '8', new Genre('Action & Fantasy', 'Cars transform in robot'), '5000000€', '2h', 2007),
+    new Movie('Transformers', 'English', '8', new Genre('Action & Fantasy', 'Cars transform in robot'), '5000000€', '2h', 2007),
+    new Movie('Transformers', 'English', '8', new Genre('Action & Fantasy', 'Cars transform in robot'), '5000000€', '2h', 2007),
+    new Movie('Transformers', 'English', '8', new Genre('Action & Fantasy', 'Cars transform in robot'), '5000000€', '2h', 2007),
+    new Movie('Transformers', 'English', '8', new Genre('Action & Fantasy', 'Cars transform in robot'), '5000000€', '2h', 2007),
+];
+
+$series = [
+    new TvSeries('The Office', 'English', 10, new Genre('Comedy', 'The Office is an American mockumentary sitcom television series '), 9, 201, 2005),
+    new TvSeries('Stranger Things', 'English', 10, new Genre('Fantasy', 'The series centers around the residents of Hawkins'), 5, 34, 2016),
+    new TvSeries('La casa de Papel', 'Espanol', 10, new Genre('Action', 'Gang of thieves rob a bank'), 5, 41, 2017),
+];
+//var_dump($hulk);
+//var_dump($movie);
 
 //var_dump($avengers, $hulk);
 
