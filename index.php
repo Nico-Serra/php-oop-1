@@ -18,9 +18,9 @@ include_once __DIR__ . '/db.php'
                     <div class="card bg-dark">
                         <div class="card-body text-white">
                             <h4>Title: <?php echo $film->title ?></h4>
-                            <h5>Language: <?php echo $film->language ?></h5>
-                            <h5>Voto: <?php echo $film->vote ?></h5>
-                            <h5>Genere: <?php echo $film->genre->name ?></h5>
+                            <p>Language: <?php echo $film->language ?></p>
+                            <p>Voto: <?php echo $film->vote ?></p>
+                            <p>Genere: <?php echo $film->genre->name . ' , ' . $film->genreExtra->name ?></p>
                             <p>Descrizione: <?php echo $film->genre->description ?></p>
 
                         </div>
@@ -37,9 +37,9 @@ include_once __DIR__ . '/db.php'
                     <div class="card bg-dark">
                         <div class="card-body text-white">
                             <h4>Title: <?php echo $movie->title ?></h4>
-                            <h5>Language: <?php echo $movie->language ?></h5>
-                            <h5>Voto: <?php echo $movie->vote ?></h5>
-                            <h5>Genere: <?php echo $movie->genre->name ?></h5>
+                            <p>Language: <?php echo $movie->language ?></p>
+                            <p>Voto: <?php echo $movie->vote ?></p>
+                            <p>Genere: <?php echo $movie->genre->name . ' , ' . $movie->genreExtra->name ?></p>
                             <p>Descrizione: <?php echo $movie->genre->description ?></p>
                             <p>Profitti: <?php echo $movie->profits ?></p>
                             <p>Durata: <?php echo $movie->duration ?></p>
@@ -58,9 +58,9 @@ include_once __DIR__ . '/db.php'
                     <div class="card bg-dark">
                         <div class="card-body text-white">
                             <h4>Title: <?php echo $serie->title ?></h4>
-                            <h5>Language: <?php echo $serie->language ?></h5>
-                            <h5>Voto: <?php echo $serie->vote ?></h5>
-                            <h5>Genere: <?php echo $serie->genre->name ?></h5>
+                            <p>Language: <?php echo $serie->language ?></p>
+                            <p>Voto: <?php echo $serie->vote ?></p>
+                            <p>Genere: <?php echo $serie->genre->name . ' , ' . $serie->genreExtra->name  ?></p>
                             <p>Descrizione: <?php echo $serie->genre->description ?></p>
                             <p>Numero di stagioni: <?php echo $serie->numberSeason ?></p>
                             <p>Totale Episodi: <?php echo $serie->totalEpisodes ?></p>
