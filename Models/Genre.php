@@ -2,9 +2,11 @@
 
 class Genre
 {
-    public function __construct(public string $name, public string $description)
+    public $listGenre;
+
+    public function __construct($genre1,$genre2,$genre3, public string $description)
     {
-        $this->name = $name;
+        $this->listGenre = [$genre1,$genre2,$genre3];
         $this->description = $description;
     }
 }

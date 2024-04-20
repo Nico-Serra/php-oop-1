@@ -12,7 +12,7 @@ class Production
     // public $language;
     // public $vote;
 
-    public function __construct(public string $title, public string $language, public int $vote, public Genre $genre, public Genre $genreExtra)
+    public function __construct(public string $title, public string $language, public int $vote, public Genre $genre)
     {
         $this->title = $title;
         $this->language = $language;

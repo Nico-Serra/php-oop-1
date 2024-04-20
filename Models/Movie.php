@@ -5,8 +5,8 @@ class Movie extends Production
     // public $duration;
     // public $year;
 
-    public function __construct($title, $language, $vote, $genre, $genreExtra, public $profits, public $duration, public $year)
+    public function __construct($title, $language, $vote, $genre, public $profits, public $duration, public $year)
     {
-        parent::__construct($title, $language, $vote, $genre, $genreExtra);
+        parent::__construct($title, $language, $vote, $genre);
     }
 }
